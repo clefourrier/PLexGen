@@ -32,6 +32,7 @@ If you need more inspiration, go see the provided files called italic.txt in sou
 
 
 # To use, cite
+```
 @inproceedings{fourrier20,
   TITLE = {{Comparing Statistical and Neural Models for Learning Sound Correspondences}},
   AUTHOR = {Fourrier, Cl{\'e}mentine and Sagot, Beno{\^i}t},
@@ -40,3 +41,4 @@ If you need more inspiration, go see the provided files called italic.txt in sou
   YEAR = {2020},
   NOTE = {(to appear)}
 }
+```
