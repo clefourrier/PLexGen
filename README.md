@@ -6,7 +6,7 @@ Phonetic lexicon generator and sound change applier - used in `Comparing Statist
 Run the main.py file, which will generate a protolanguage and 3 children, stored in the output folder.
 
 ## Use this repo for your languages
-### sound_changes
+### 1) Generate your sound changes
 Add your sound changes to a new file.
 
 A sound change has the following shape: `origin_phones/new_phones/context`
@@ -15,7 +15,7 @@ A sound change has the following shape: `origin_phones/new_phones/context`
   - For example, eC,Vj means "all 'e' followed by a consonnant, all 'j' preceded by a vowel". 
   - The comma means "and" in the origin_phones (`this phone group and this one will be transformed to...`) and "or" in the new_phones (`the transformation can go to this phone group or this one` - the choice between the groups is done by the rule_change_applier).
   
-### sound_inventories
+### 2) Generate your sound inventories
 To generate your own sound inventory, copy the \_default.json file and add your phones in the correct categories. 
 
 - Phones
@@ -30,7 +30,7 @@ To generate your own sound inventory, copy the \_default.json file and add your 
     - You must provide a list of lists of combinations
     - Here, "initial": [["Vs"], ["ast", "est", "ist"]], the algorithm will randomly pick one list to begin a word, and one item from that list. It means that a word has 1/2 chance of beginning by a vowel followed by "s", 1/6 by "ast", 1/6 by "est" and 1/6 by "ist". 
 
-### run main
+### 3) Edit and run main
 If you need more inspiration, go see the provided files called italic.txt in sound_changes and italic.json in sound_inventories. When you are satisfied, edit the main file, so it picks your new configuration files, and run it.
 
 
