@@ -1,0 +1,56 @@
+{
+  "phones": {
+    "mandatory": {
+      "consonants": ["m", "p", "b", "f", "n", "d", "t", "s", "l" ,"k", "g", "j", "w"],
+      "vowels": [
+        "a",
+        "e",
+        "i",
+        "o",
+        "u"
+      ]
+    },
+    "possible": {
+      "consonants": ["v", "z", "tʃ", "ʃ", "ʒ", "ɾ", "r", "ɲ"],
+      "vowels": [
+        "ɑ",
+        "ɛ",
+        "ɔ",
+        "œ",
+        "ø",
+        "y",
+        "ə",
+        "ɐ",
+        "ɨ"
+      ]
+    }
+  },
+  "phonotactics": {
+    "syllables_number": [1, 2, 2, 2, 2, 2, 3, 3, 3],
+    "clusters": {
+      "initial": [
+        ["V"],
+        ["CV"],
+        ["CV"],
+        ["spV", "stV", "skV"],
+        ["prV", "brV", "frV", "trV", "drV", "krV", "grV", "plV", "blV", "flV", "klV", "glV", "kwV", "swV"],
+        ["sprV", "strV", "splV", "skwV"]
+      ],
+      "final": [
+        ["ps", "ks", "st"],
+        ["jn"],
+        ["mps", "rps", "jps", "ŋks", "rks", "lks", "jks", "wks"],
+        ["CV"],
+        ["Coi", "Cai", "Cei", "Cou", "Ceu", "Cau"]
+      ],
+      "middle": [
+        ["ptV", "ktV", "ksV", "psV", "spV", "stV", "skV", "mnV", "lmV", "rmV", "lnV", "rnV", "lwV", "rwV", "jmV", "wnV", "jnV", "wlV", "wrV", "jrV", "jwV"],
+        ["OSV"],
+        ["SOV"],
+        ["CV"],
+        ["Coi", "Cai", "Cei", "Cou", "Ceu", "Cau"]
+      ]
+    },
+    "source": "simplified version of latin phonotactics, from Aspects of the Phonology and Morphology of Classical Satin by Andras Cser, part 3"
+  }
+}

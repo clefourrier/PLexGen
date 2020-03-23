@@ -1,0 +1,21 @@
+!!Other rules that can be added: Metaphony, Diphtongization, Nasalization, Front rounded vowels
+!!source: https://en.wikipedia.org/wiki/Romance_languages#Phonology
+ts/s/_&&dz/z/_&&tʃ/ʃ/_&&dʒ/ʒ/_!!affricates_to_fricatives - western romance languages
+ʎ,ɲ/j/_
+C/Ce/_#
+m//_#!!dropping final m
+t//_#!!dropping final t
+t/tsj/_j!!Palatisation 1 - romance languages
+d/dzj/_j!!Palatisation 1 - romance languages
+k/tʃj,tsj/_iV!!Palatisation 3  - romance languages except sardinian and dalmatian
+k/tʃj,tsj/_eV!!Palatisation 3 - romance languages except sardinian and dalmatian
+g/j,dʒʲ/_iV!!Palatisation 4 - romance languages except sardinian and dalmatian
+g/j,dʒʲ/_eV!!Palatisation 4 - romance languages except sardinian and dalmatian
+sC/isC,esC/#_!!Vowel prosthesis
+p/b/_&&t/d/_&&c/g/_!!Lenition (voicing of voiceless plosives)
+d/Vj/V_i&&g/Vj/V_i!!Disparition of voiced plosives
+s/z/V_V!!Voicing of sibilant between vowels
+a/e/_
+u/o/_
+u/e/_
+ei/a/_

@@ -1,0 +1,21 @@
+{"phones": {
+    "mandatory": {
+      "consonants": [],
+      "vowels": []
+    },
+    "possible": {
+      "consonants": [],
+      "vowels": []
+    },
+    "source": ""
+  },
+  "phonotactics": {
+    "syllabes_number": [],
+    "clusters": {
+      "inital": [["", ""],[""]],
+      "final": [["", ""],[""]],
+      "middle": [["", ""],[""]]
+    },
+    "source": ""
+  }
+}
