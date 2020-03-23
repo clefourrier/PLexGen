@@ -7,7 +7,8 @@ Run the main.py file, which will generate a protolanguage and 3 children, stored
 
 ## Use this repo for your languages
 ### sound_changes
-Add your sound changes to a new file
+Add your sound changes to a new file.
+
 A sound change has the following shape: `origin_phones/new_phones/context`
 - Phones: 
   - A phone in lowercase represents itself. V means vowel. C means consonnant. A comma separates two groups of phones. 
@@ -16,6 +17,7 @@ A sound change has the following shape: `origin_phones/new_phones/context`
   
 ### sound_inventories
 To generate your own sound inventory, copy the \_default.json file and add your phones in the correct categories. 
+
 - Phones
   - The mandatory phones will be present in your inventory
   - A random subset of your phones will be drawn from the possible phones catagory 
@@ -28,7 +30,8 @@ To generate your own sound inventory, copy the \_default.json file and add your 
     - You must provide a list of lists of combinations
     - Here, "initial": [["Vs"], ["ast", "est", "ist"]], the algorithm will randomly pick one list to begin a word, and one item from that list. It means that a word has 1/2 chance of beginning by a vowel followed by "s", 1/6 by "ast", 1/6 by "est" and 1/6 by "ist". 
 
-If you need more inspiration, go see the provided files called italic.txt in sound_changes and italic.json in sound_inventories.
+### run main
+If you need more inspiration, go see the provided files called italic.txt in sound_changes and italic.json in sound_inventories. When you are satisfied, edit the main file, so it picks your new configuration files, and run it.
 
 
 # To use, cite
