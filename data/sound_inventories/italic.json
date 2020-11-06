@@ -1,7 +1,7 @@
 {
   "phones": {
     "mandatory": {
-      "consonants": ["m", "p", "b", "f", "n", "d", "t", "s", "l" ,"k", "g", "j", "w"],
+      "consonants": ["m", "p", "b", "f", "n", "d", "t", "s", "l" ,"k", "ɡ", "j", "w"],
       "vowels": [
         "a",
         "e",
@@ -33,7 +33,7 @@
         ["CV"],
         ["CV"],
         ["spV", "stV", "skV"],
-        ["prV", "brV", "frV", "trV", "drV", "krV", "grV", "plV", "blV", "flV", "klV", "glV", "kwV", "swV"],
+        ["prV", "brV", "frV", "trV", "drV", "krV", "ɡrV", "plV", "blV", "flV", "klV", "ɡlV", "kwV", "swV"],
         ["sprV", "strV", "splV", "skwV"]
       ],
       "final": [

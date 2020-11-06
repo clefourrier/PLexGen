@@ -1,0 +1,4 @@
+!!original sound/becomes/in context
+C/p,k/V_V!!Middle consonant becomes p or k
+C/p/pV_#!!End consonant becomes middle consonant
+C/k/kV_#!!End consonant becomes middle consonant

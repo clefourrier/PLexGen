@@ -9,19 +9,20 @@ from language_definition.phones.pulmonic_consonants import (
 
 
 class Generator:
-    def __init__(self, lang_json):
+    def __init__(self, lang_json, vocab_size):
         consonants = lang_json["phones"]["mandatory"]["consonants"]
         vowels = lang_json["phones"]["mandatory"]["vowels"]
 
         consonants += self.sub_sample(
             lang_json["phones"]["possible"]["consonants"],
             len(consonants) + len(vowels),
-            20,
+            vocab_size,
         )
         self.consonants = [PulmonicConsonant[c] for c in consonants]
 
         vowels += self.sub_sample(
-            lang_json["phones"]["possible"]["vowels"], len(consonants) + len(vowels), 3
+            lang_json["phones"]["possible"]["vowels"], 
+            len(consonants) + len(vowels), vocab_size
         )
         self.vowels = [Vowel[v] for v in vowels]
 
@@ -30,9 +31,9 @@ class Generator:
         self.clusters_mid = lang_json["phonotactics"]["clusters"]["middle"]
         self.clusters_fin = lang_json["phonotactics"]["clusters"]["final"]
 
-    def sub_sample(self, samp_list, cur_num_letters, max_allowed):
+    def sub_sample(self, samp_list, cur_num_letters, vocab_size):
         upper_range = min(
-            int((30 - cur_num_letters) * 2 / 3), len(samp_list), max_allowed
+            int((vocab_size - cur_num_letters) * 2 / 3), len(samp_list)
         )
         return random.sample(samp_list, random.randint(0, upper_range))
 

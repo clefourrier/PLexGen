@@ -10,9 +10,9 @@
     "source": ""
   },
   "phonotactics": {
-    "syllabes_number": [],
+    "syllables_number": [],
     "clusters": {
-      "inital": [["", ""],[""]],
+      "initial": [["", ""],[""]],
       "final": [["", ""],[""]],
       "middle": [["", ""],[""]]
     },

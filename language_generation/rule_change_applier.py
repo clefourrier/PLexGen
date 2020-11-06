@@ -14,7 +14,7 @@ class RuleChange:
         while "V" in context:
             context = re.sub(
                 "V",
-                f"(?P<v{str(ctr_v)}>[{''.join([v.ipa for v in Vowel if not v.is_long])}:])",
+                f"(?P<v{str(ctr_v)}>[{''.join([v.ipa for v in Vowel])}:])",
                 context,
                 count=1,
             )
@@ -92,9 +92,12 @@ class RuleChangeApplier:
                         cur_change.append(RuleChange(s, trg.split(","), ctx))
                 possible_changes.append(cur_change)
 
-        self.changes = list(
-            itertools.chain(*random.sample(possible_changes, num_rules))
-        )
+        if len(possible_changes) != num_rules:
+            self.changes = list(
+                itertools.chain(*random.sample(possible_changes, num_rules))
+            )
+        else:  # Ordered changes
+            self.changes = list(itertools.chain(*possible_changes))
 
     def apply_changes(self, word_list):
         result = []

@@ -1,0 +1,38 @@
+{
+  "phones": {
+    "mandatory": {
+      "consonants": ["m", "b", "f", "n", "d", "t", "s", "l", "ɡ", "j", "w"],
+      "vowels": [
+        "a",
+        "e",
+        "i",
+        "o",
+        "u"
+      ]
+    },
+    "possible": {
+      "consonants": ["v", "z", "ʃ", "ʒ", "ɾ", "r", "ɲ"],
+      "vowels": [
+        "ɑ",
+        "ɛ",
+        "ɔ",
+        "œ",
+        "ø",
+        "y",
+        "ə",
+        "ɐ",
+        "ɨ"
+      ]
+    }
+  },
+
+  "phonotactics": {
+    "syllables_number": [1],
+    "clusters": {
+      "initial": [["CVCVC", "CVCVC"]],
+      "middle": [["", ""]],
+      "final": [["", ""]]
+    },
+    "source": "Experiment to check transformer attention result"
+  }
+}
