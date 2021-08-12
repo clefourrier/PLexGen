@@ -3,7 +3,7 @@
 
 from enum import Enum
 
-
+# Lacks good management of nasals
 class Backness(Enum):
     FRONT = 1
     NEAR_FRONT = 1.5
@@ -225,6 +225,16 @@ class Vowel(Enum):
         "\u028A",
         321,
     )
+    ũ = (
+        "ũ",
+        True,
+        Backness.NEAR_BACK,
+        Height.NEAR_CLOSE,
+        False,
+        "Near-close back rounded nasal vowel",
+        "\u028A",
+        321,
+    ) 
     ɯ = (
         "ɯ",
         False,
@@ -264,6 +274,16 @@ class Vowel(Enum):
         "Close-mid back rounded vowel",
         "\u006F",
         307,
+    )
+    õ = (
+        "õ",
+        True,
+        Backness.NEAR_BACK,
+        Height.MID,
+        False,
+        "Mid near back rounded nasal vowel",
+        "\u00F5",
+        245,
     )
     #   o  = ("o", True, Backness.BACK, Height.MID, False, "Mid back rounded vowel", "\u") - no dedicated IPA symbol
     ʌ = (
@@ -307,7 +327,7 @@ class Vowel(Enum):
         313,
     )
     i_ = (
-        "i:",
+        "iː",
         False,
         Backness.FRONT,
         Height.CLOSE,
@@ -317,7 +337,7 @@ class Vowel(Enum):
         301,
     )
     y_ = (
-        "y:",
+        "yː",
         True,
         Backness.FRONT,
         Height.CLOSE,
@@ -327,7 +347,7 @@ class Vowel(Enum):
         309,
     )
     e_ = (
-        "e:",
+        "eː",
         False,
         Backness.FRONT,
         Height.CLOSE_MID,
@@ -337,7 +357,7 @@ class Vowel(Enum):
         302,
     )
     ø_ = (
-        "ø:",
+        "øː",
         True,
         Backness.FRONT,
         Height.CLOSE_MID,
@@ -346,9 +366,9 @@ class Vowel(Enum):
         "\u00F8",
         310,
     )
-    #    _ø = ("ø:", True, Backness.FRONT, Height.MID, False, "mid front rounded vowel") - no dedicated IPA symbol
+    #    _ø = ("øː", True, Backness.FRONT, Height.MID, False, "mid front rounded vowel") - no dedicated IPA symbol
     ɛ_ = (
-        "ɛ:",
+        "ɛː",
         False,
         Backness.FRONT,
         Height.OPEN_MID,
@@ -358,7 +378,7 @@ class Vowel(Enum):
         303,
     )
     œ_ = (
-        "œ:",
+        "œː",
         True,
         Backness.FRONT,
         Height.OPEN_MID,
@@ -368,7 +388,7 @@ class Vowel(Enum):
         311,
     )
     æ_ = (
-        "æ:",
+        "æː",
         False,
         Backness.FRONT,
         Height.NEAR_OPEN,
@@ -378,7 +398,7 @@ class Vowel(Enum):
         325,
     )
     a_ = (
-        "a:",
+        "aː",
         False,
         Backness.FRONT,
         Height.OPEN,
@@ -388,7 +408,7 @@ class Vowel(Enum):
         304,
     )
     ɶ_ = (
-        "ɶ:",
+        "ɶː",
         True,
         Backness.FRONT,
         Height.OPEN,
@@ -398,7 +418,7 @@ class Vowel(Enum):
         312,
     )
     ɪ_ = (
-        "ɪ:",
+        "ɪː",
         False,
         Backness.NEAR_FRONT,
         Height.NEAR_CLOSE,
@@ -408,7 +428,7 @@ class Vowel(Enum):
         319,
     )
     ʏ_ = (
-        "ʏ:",
+        "ʏː",
         True,
         Backness.NEAR_FRONT,
         Height.NEAR_CLOSE,
@@ -418,7 +438,7 @@ class Vowel(Enum):
         320,
     )
     ɨ_ = (
-        "ɨ:",
+        "ɨː",
         False,
         Backness.CENTRAL,
         Height.CLOSE,
@@ -428,7 +448,7 @@ class Vowel(Enum):
         317,
     )
     ʉ_ = (
-        "ʉ:",
+        "ʉː",
         True,
         Backness.CENTRAL,
         Height.CLOSE,
@@ -438,7 +458,7 @@ class Vowel(Enum):
         316,
     )
     ɘ_ = (
-        "ɘ:",
+        "ɘː",
         False,
         Backness.CENTRAL,
         Height.CLOSE_MID,
@@ -448,7 +468,7 @@ class Vowel(Enum):
         397,
     )
     ɵ_ = (
-        "ɵ:",
+        "ɵː",
         True,
         Backness.CENTRAL,
         Height.CLOSE_MID,
@@ -458,7 +478,7 @@ class Vowel(Enum):
         323,
     )
     ə_ = (
-        "ə:",
+        "əː",
         None,
         Backness.CENTRAL,
         Height.MID,
@@ -468,7 +488,7 @@ class Vowel(Enum):
         322,
     )  # schwa
     ɜ_ = (
-        "ɜ:",
+        "ɜː",
         False,
         Backness.CENTRAL,
         Height.OPEN_MID,
@@ -478,7 +498,7 @@ class Vowel(Enum):
         326,
     )
     ɞ_ = (
-        "ɞ:",
+        "ɞː",
         True,
         Backness.CENTRAL,
         Height.OPEN_MID,
@@ -488,7 +508,7 @@ class Vowel(Enum):
         395,
     )
     ɐ_ = (
-        "ɐ:",
+        "ɐː",
         None,
         Backness.CENTRAL,
         Height.NEAR_OPEN,
@@ -497,9 +517,9 @@ class Vowel(Enum):
         "\u0250",
         324,
     )
-    #   a_ = ("a:", False, Backness.CENTRAL, Height.OPEN, True, "Open central unrounded vowel", ) - no dedicated IPA symbol
+    #   a_ = ("aː", False, Backness.CENTRAL, Height.OPEN, True, "Open central unrounded vowel", ) - no dedicated IPA symbol
     ʊ_ = (
-        "ʊ:",
+        "ʊː",
         True,
         Backness.NEAR_BACK,
         Height.NEAR_CLOSE,
@@ -509,7 +529,7 @@ class Vowel(Enum):
         321,
     )
     ɯ_ = (
-        "ɯ:",
+        "ɯː",
         False,
         Backness.BACK,
         Height.CLOSE,
@@ -519,7 +539,7 @@ class Vowel(Enum):
         316,
     )
     u_ = (
-        "u:",
+        "uː",
         True,
         Backness.BACK,
         Height.CLOSE,
@@ -529,7 +549,7 @@ class Vowel(Enum):
         308,
     )
     ɤ_ = (
-        "ɤ:",
+        "ɤː",
         False,
         Backness.BACK,
         Height.CLOSE_MID,
@@ -539,7 +559,7 @@ class Vowel(Enum):
         315,
     )
     o_ = (
-        "o:",
+        "oː",
         True,
         Backness.BACK,
         Height.CLOSE_MID,
@@ -548,9 +568,9 @@ class Vowel(Enum):
         "\u006F",
         307,
     )
-    #   o_  = ("o:", True, Backness.BACK, Height.MID, True, "Mid back rounded vowel", "\u") - no dedicated IPA symbol
+    #   o_  = ("oː", True, Backness.BACK, Height.MID, True, "Mid back rounded vowel", "\u") - no dedicated IPA symbol
     ʌ_ = (
-        "ʌ:",
+        "ʌː",
         False,
         Backness.BACK,
         Height.OPEN_MID,
@@ -560,7 +580,7 @@ class Vowel(Enum):
         314,
     )
     ɔ_ = (
-        "ɔ:",
+        "ɔː",
         True,
         Backness.BACK,
         Height.OPEN_MID,
@@ -570,7 +590,7 @@ class Vowel(Enum):
         306,
     )
     ɑ_ = (
-        "ɑ:",
+        "ɑː",
         False,
         Backness.BACK,
         Height.OPEN,
@@ -580,7 +600,7 @@ class Vowel(Enum):
         305,
     )
     ɒ_ = (
-        "ɒ:",
+        "ɒː",
         True,
         Backness.BACK,
         Height.OPEN,

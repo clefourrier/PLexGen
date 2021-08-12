@@ -124,7 +124,20 @@ class PulmonicConsonant(Enum):
         "\u0070",
         101,
     )
-    b = ("b", True, Place.BILABIAL, Manner.STOP, "Voiced bilabial stop", "\u0062", 102)
+    b = ("b", 
+        True, 
+        Place.BILABIAL, 
+        Manner.STOP, 
+        "Voiced bilabial stop", 
+        "\u0062", 
+        102)
+    b_ = ("bː", 
+        True, 
+        Place.BILABIAL, 
+        Manner.STOP, 
+        "Voiced bilabial geminated stop", 
+        "\u0062\u02D0", 
+        102)
     ɸ = (
         "ɸ",
         False,
@@ -233,7 +246,29 @@ class PulmonicConsonant(Enum):
         "\u0074",
         103,
     )
-    d = ("d", True, Place.ALVEOLAR, Manner.STOP, "Voiced alveolar stop", "\u0064", 104)
+    t_ = (
+        "tː",
+        False,
+        Place.ALVEOLAR,
+        Manner.STOP,
+        "Voiceless alveolar geminated stop",
+        "\u0074\u02D0",
+        103,
+    )
+    d = ("d", 
+        True, 
+        Place.ALVEOLAR, 
+        Manner.STOP, 
+        "Voiced alveolar stop", 
+        "\u0064", 
+        104)
+    d_ = ("dː", 
+        True, 
+        Place.ALVEOLAR, 
+        Manner.STOP, 
+        "Voiced alveolar geminated stop", 
+        "\u0064\u02D0", 
+        104)
     ts = (
         "ts",
         False,
@@ -297,6 +332,15 @@ class PulmonicConsonant(Enum):
         "\u0073",
         132,
     )
+    s_ = (
+        "sː",
+        False,
+        Place.ALVEOLAR,
+        Manner.FRICATIVE,
+        "Voiceless alveolar geminated sibilant",
+        "\u0073\u02D0",
+        132,
+    )
     z = (
         "z",
         True,
@@ -304,6 +348,15 @@ class PulmonicConsonant(Enum):
         Manner.FRICATIVE,
         "Voiced alveolar sibilant",
         "\u007A",
+        133,
+    )
+    z_ = (
+        "zː",
+        True,
+        Place.ALVEOLAR,
+        Manner.FRICATIVE,
+        "Voiced alveolar geminated sibilant",
+        "\u007A\u02D0",
         133,
     )
     ʃ = (
@@ -322,6 +375,24 @@ class PulmonicConsonant(Enum):
         Manner.FRICATIVE,
         "Voiced postalveolar fricative",
         "\u0292",
+        135,
+    )
+    ʃ_ = (
+        "ʃː",
+        False,
+        Place.POSTALVEOLAR,
+        Manner.FRICATIVE,
+        "Voiceless postalveolar geminated fricative",
+        "\u0283\u02D0",
+        134,
+    )
+    ʒ_ = (
+        "ʒː",
+        True,
+        Place.POSTALVEOLAR,
+        Manner.FRICATIVE,
+        "Voiced postalveolar geminated fricative",
+        "\u0292\u02D0",
         135,
     )
     θ = (
@@ -661,7 +732,17 @@ class PulmonicConsonant(Enum):
     )
     ŋ = ("ŋ", True, Place.VELAR, Manner.NASAL, "Voiced velar nasal", "\u014B", 119)
     k = ("k", False, Place.VELAR, Manner.STOP, "Voiceless velar stop", "\u006B", 109)
+    k_ = ("kː", False, Place.VELAR, Manner.STOP, "Voiceless velar geminated stop", "\u006B\u02D0", 109)
     ɡ = ("ɡ", True, Place.VELAR, Manner.STOP, "Voiced velar stop", "\u0261", 110)
+    ɡ_ = (
+        "ɡː", 
+        True, 
+        Place.VELAR, 
+        Manner.STOP, 
+        "Voiced velar geminated stop", 
+        "\u0261", 
+        110
+        )
     g = ("ɡ", True, Place.VELAR, Manner.STOP, "Voiced velar stop", "\u0261", 110)
     kʷ = (
         "kʷ",
