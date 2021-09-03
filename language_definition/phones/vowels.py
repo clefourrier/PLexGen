@@ -74,6 +74,16 @@ class Vowel(Enum):
         "\u025B",
         303,
     )
+    ɛ̃ = (
+        "ɛ̃",
+        False,
+        Backness.FRONT,
+        Height.OPEN_MID,
+        False,
+        "Open-mid front unrounded nasal vowel",
+        "\u025B",
+        303,
+    )
     œ = (
         "œ",
         True,
@@ -93,6 +103,16 @@ class Vowel(Enum):
         "Near-open front unrounded vowel",
         "\u00E6",
         325,
+    )
+    ɑ̃ = (
+        "ɑ̃",
+        False,
+        Backness.FRONT,
+        Height.OPEN,
+        False,
+        "Open front unrounded nasal vowel",
+        "\u0061",
+        304,
     )
     a = (
         "a",
@@ -204,6 +224,16 @@ class Vowel(Enum):
         "\u025E",
         395,
     )
+    ɐ̃ = (
+        "ɐ̃",
+        None,
+        Backness.CENTRAL,
+        Height.NEAR_OPEN,
+        False,
+        "Nasalised near-open central vowel",
+        "\u0250",
+        324,
+    )
     ɐ = (
         "ɐ",
         None,
@@ -222,6 +252,16 @@ class Vowel(Enum):
         Height.NEAR_CLOSE,
         False,
         "Near-close back rounded vowel",
+        "\u028A",
+        321,
+    )
+    ʊ̃ = (
+        "ʊ̃",
+        True,
+        Backness.NEAR_BACK,
+        Height.NEAR_CLOSE,
+        False,
+        "Near-close back rounded nasal vowel",
         "\u028A",
         321,
     )
@@ -303,6 +343,16 @@ class Vowel(Enum):
         Height.OPEN_MID,
         False,
         "Open-mid back rounded vowel",
+        "\u0254",
+        306,
+    )
+    ɔ̃ = (
+        "ɔ̃",
+        True,
+        Backness.BACK,
+        Height.OPEN_MID,
+        False,
+        "Open-mid back rounded nasal vowel",
         "\u0254",
         306,
     )
@@ -616,7 +666,7 @@ class Vowel(Enum):
         rounding: bool,
         backness: Backness,
         height: Height,
-        long: bool,
+        is_long: bool,
         name: str,
         unicode: str,
         ipa_num: int,
@@ -625,7 +675,7 @@ class Vowel(Enum):
         self.is_round = rounding
         self.backness = backness
         self.height = height
-        self.is_long = long
+        self.is_long = is_long
         self.long_name = name
         self.unicode = unicode
         self.ipa_number = ipa_num
