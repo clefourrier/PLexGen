@@ -94,6 +94,16 @@ class Vowel(Enum):
         "\u0153",
         311,
     )
+    œ̃ = (
+        "œ̃",
+        True,
+        Backness.FRONT,
+        Height.OPEN_MID,
+        False,
+        "Open-mid front rounded nasal vowel",
+        "\u0153",
+        311,
+    )
     æ = (
         "æ",
         False,

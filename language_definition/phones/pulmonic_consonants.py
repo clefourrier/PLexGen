@@ -114,6 +114,15 @@ class PulmonicConsonant(Enum):
         "Voiced bilabial nasal",
         "\u006D",
         114,
+    )    
+    m_ = (
+        "mː",
+        True,
+        Place.BILABIAL,
+        Manner.NASAL,
+        "Voiced bilabial geminated nasal",
+        "\u006D",
+        114,
     )
     p = (
         "p",
@@ -121,6 +130,15 @@ class PulmonicConsonant(Enum):
         Place.BILABIAL,
         Manner.STOP,
         "Voiceless bilabial stop",
+        "\u0070",
+        101,
+    )
+    p_ = (
+        "pː",
+        False,
+        Place.BILABIAL,
+        Manner.STOP,
+        "Voiceless bilabial geminated stop",
         "\u0070",
         101,
     )
@@ -192,12 +210,30 @@ class PulmonicConsonant(Enum):
         "\u0066",
         128,
     )
+    f_ = (
+        "fː",
+        False,
+        Place.LABIODENTAL,
+        Manner.FRICATIVE,
+        "Voiceless labiodental geminated fricative",
+        "\u0066",
+        128,
+    )
     v = (
         "v",
         True,
         Place.LABIODENTAL,
         Manner.FRICATIVE,
         "Voiced labiodental fricative",
+        "\u0076",
+        129,
+    )
+    v_ = (
+        "vː",
+        True,
+        Place.LABIODENTAL,
+        Manner.FRICATIVE,
+        "Voiced labiodental geminated fricative",
         "\u0076",
         129,
     )
@@ -219,7 +255,7 @@ class PulmonicConsonant(Enum):
         "\u2C71",
         184,
     )
-    n_ = (
+    n__ = (
         "n̥",
         False,
         Place.ALVEOLAR,
@@ -234,6 +270,15 @@ class PulmonicConsonant(Enum):
         Place.ALVEOLAR,
         Manner.NASAL,
         "Voiced alveolar nasal",
+        "\u006E",
+        116,
+    )
+    n_ = (
+        "nː",
+        True,
+        Place.ALVEOLAR,
+        Manner.NASAL,
+        "Voiced alveolar geminated nasal",
         "\u006E",
         116,
     )
@@ -431,12 +476,30 @@ class PulmonicConsonant(Enum):
         "\u027E",
         124,
     )
+    ɾ_ = (
+        "ɾː",
+        True,
+        Place.ALVEOLAR,
+        Manner.TAP_FLAP,
+        "Voiced alveolar geminated tap and flap",
+        "\u027E",
+        124,
+    )
     r = (
         "r",
         True,
         Place.ALVEOLAR,
         Manner.TRILL,
         "Voiced alveolar trill",
+        "\u0072",
+        122,
+    )
+    r_ = (
+        "rː",
+        True,
+        Place.ALVEOLAR,
+        Manner.TRILL,
+        "Voiced alveolar geminated trill",
         "\u0072",
         122,
     )
